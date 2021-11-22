@@ -31,7 +31,7 @@ function checkAvailableLikes() {
 function swipeRight() {
     if (isStopped)
         return;
-    // A random period between 500ms and 2secs
+
     let randomPeriod = matchDelay;
 
     setTimeout(() => {
@@ -69,18 +69,6 @@ document.onkeydown = (ev) => {
             break;
     }
 };
-
-// selector gamepad
-// #t-1646534024 > div > div.App__body.H\(100\%\).Pos\(r\).Z\(0\) > div > main > div.H\(100\%\) > div > div > div.recsCardboard.W\(100\%\).Mt\(a\).H\(100\%\)--s.Px\(4px\)--s.Pos\(r\) > div.recsCardboard__cardsContainer.H\(100\%\).Pos\(r\).Z\(1\) > div > div.Pos\(a\).B\(0\).Isolate.W\(100\%\).Start\(0\).End\(0\) > div
-
-// jspath gamepad
-// document.querySelector("#t-1646534024 > div > div.App__body.H\\(100\\%\\).Pos\\(r\\).Z\\(0\\) > div > main > div.H\\(100\\%\\) > div > div > div.recsCardboard.W\\(100\\%\\).Mt\\(a\\).H\\(100\\%\\)--s.Px\\(4px\\)--s.Pos\\(r\\) > div.recsCardboard__cardsContainer.H\\(100\\%\\).Pos\\(r\\).Z\\(1\\) > div > div.Pos\\(a\\).B\\(0\\).Isolate.W\\(100\\%\\).Start\\(0\\).End\\(0\\) > div")
-
-// xpath gamepad
-// //*[@id="t-1646534024"]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div
-
-// full xpath gamepad
-// /html/body/div[1]/div/div[1]/div/main/div[1]/div/div/div[1]/div[1]/div/div[4]/div
 
 console.log("PRESS SPACEBAR TO PAUSE/CONTINUE");
 console.log("PRESS 's' KEY TO STOP");
